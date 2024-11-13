@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+/* header section */
+
+.header-links{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* end header */
+
+/* presentation */
+
+.presentation-content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-photo img{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* end presentation */
+
+/* about */
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* end about */
+
+/* skills */
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background-color: #222;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.s-container {
+  position: relative;
+}
+
+
+.s-container .s-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.s-container .s-progress h3{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.s-container .s-progress h3 span {
+  font-size: 0.65em;
+  font-weight: 400;
+}
+
+.s-container .s-progress h4 {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.s-container .s-progress::before{
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+
+.s-container .s-progress::after{
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: #222;
+}
+
+.s-container .s-progress::before{
+  background: var(--clr);
+  transform: rotate(calc(((var(--i) - 50)* 0.01turn )));
+}
+
+/* if value es less than 50%, then */
+
+.s-container .s-progress.less::before{
+  background: #444;
+  transform: rotate(calc(((var(--i) - 0)* 0.01turn )));
+}
+
+/* end skills */
+
+/* project-card */
+
+.text-projects{
+  text-align: center;
+}
+
+.projects {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #202020;
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* end project-card */
+
+/* Footer */
+
+.App-footer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+/* end footer */
