@@ -102,7 +102,11 @@ function App() {
 
       </section>
 
-      <Contact />
+      <Contact 
+      location="Colombia, Armenia"
+      phone="+57 312 689 88 66"
+      email="devdanielsanabria@gmail.com"
+      />
 
       <Footer />
 
