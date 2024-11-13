@@ -1,25 +1,30 @@
 import React from 'react'
 import copyPng from "../assets/copy.png"
+import linkedinPng from "../assets/linkedin-logo.png"
+import githubPng from "../assets/github-logo.png"
 
 export const Contact = (props) => {
 
     const handleClickButton = () => {
         navigator.clipboard.writeText(props.email)
-        .then(()=> {
-            alert('email copied')
-        })
-        .catch((err)=>{
-            alert('Error copying text', err)
-        })
+            .then(() => {
+                alert('email copied')
+            })
+            .catch((err) => {
+                alert('Error copying text', err)
+            })
     }
 
     return (
         <>
-        {/* <h2>Contact me</h2> */}
             <section id="contact" className="contact">
                 <div className='contact-me'>
-                <h2 className='contact-title'>Contact me</h2>
+                    <h2 className='contact-title'>Contact me</h2>
                     <p>Feel free to send me a text message if you'd like.</p>
+                    <div className="social-media">
+                        <a className='logo' href="https://www.linkedin.com/in/jorge-daniel-sanabria-soto-aa77362b8/"><img src={linkedinPng} alt="linkedin-logo"/></a>
+                        <a className='logo' href="https://github.com/Pininita"><img src={githubPng} alt="github-logo"/></a>
+                    </div>
                     <div className="location">
                         <h4>Location:</h4>
                         <p>{props.location}</p>
