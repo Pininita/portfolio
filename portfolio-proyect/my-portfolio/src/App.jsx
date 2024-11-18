@@ -48,6 +48,13 @@ function App() {
         />
 
         <Skills
+          percentage="50"
+          tool="REACT"
+          color="#426680"
+          range=""
+        />
+
+        <Skills
           percentage="62"
           tool="NODE.JS"
           color="#8CC84B"
@@ -102,10 +109,10 @@ function App() {
 
       </section>
 
-      <Contact 
-      location="Colombia, Armenia"
-      phone="+57 312 689 88 66"
-      email="devdanielsanabria@gmail.com"
+      <Contact
+        location="Colombia, Armenia"
+        phone="+57 312 689 88 66"
+        email="devdanielsanabria@gmail.com"
       />
 
       <Footer />

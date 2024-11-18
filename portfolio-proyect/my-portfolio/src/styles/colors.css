@@ -18,3 +18,48 @@
     color: #E4C5AF;
 }
 
+.color-6{
+    color: #426680;
+}
+
+.color-7{
+    color: yellow;
+}
+
+/* paleta de colores entre verde y negro */
+
+.cl-1{
+    color: #006400;
+    background-color: #000000;
+}
+
+.cl-2{
+    color: #A8D5BA;
+    background-color: #333333;
+}
+
+.cl-3{
+    color: #00FF00;
+    background-color: #121212;
+}
+
+.cl-4{
+    color: #4A5D23;
+    background-color: #2E2E2E;
+}
+
+.cl-5{
+    color: #39FF14;
+    background-color: #1A1A1A;
+}
+
+.cl-6{
+    color: #808000;
+    background-color: #212121;
+}
+
+.cl-7{
+    color: #8BC34A;
+    background-color: #424242;
+}
+

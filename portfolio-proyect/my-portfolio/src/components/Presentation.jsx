@@ -1,17 +1,34 @@
 import React from "react";
 import danielPhoto from '../assets/devdaniel-photo.jpeg';
-
+import Typewriter from 'typewriter-effect'
 
 export function Presentation() {
+
+
     return (
         <>
             <section id="presentation" className="presentation">
                 <div className="presentation-content">
                     <div className="content">
-                        <h1>Hi, I am Daniel Sanabria</h1>
-                        <p>Full stack developer</p>
-                    </div>
+                        <h1>Hi, I am</h1>
+                        <h1 className="typewriter"><Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString('Daniel Sanabria')
+                                    .pauseFor(2000)
+                                    .deleteAll()
+                                    .typeString('Full Stack Dev')
+                                    .pauseFor(2000)
+                                    .deleteAll()
+                                    .start()
+                            }}
+                            options={{
+                                loop: true
+                            }}
 
+                        /></h1>
+                    </div>
+                    {/* perfil image */}
                     <div className='content-photo'>
                         <img src={danielPhoto} alt="personal-photo" />
                     </div>
