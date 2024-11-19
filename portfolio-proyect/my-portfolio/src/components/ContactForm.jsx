@@ -18,12 +18,13 @@ export const ContactForm = () => {
                 required
             />
             <label htmlFor="email">
-                Your Email:
+                Email:
             </label>
             <input
                 id="email"
                 type="email"
                 name="email"
+                required
             />
             <ValidationError
                 prefix="Email"
@@ -36,6 +37,7 @@ export const ContactForm = () => {
             <textarea
                 id="message"
                 name="message"
+                required
             />
             <ValidationError
                 prefix="Message"

@@ -64,7 +64,7 @@ function App() {
         <Skills
           percentage="66"
           tool="EXPRESS"
-          color="#000000"
+          color="#808000"
           range=""
         />
 
