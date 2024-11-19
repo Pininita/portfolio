@@ -5,13 +5,18 @@
 
 body {
   margin: 0;
-  /* padding: 50px; */
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1A1A1A;  /* Negro Mate */
+  overflow-y: scroll;
+  background-color: #1A1A1A; 
   color: #A8D5BA;
+}
+
+html{
+  scroll-behavior: smooth;
+  scrollbar-color: #4CAF50 #393939;
 }
 
 a{
@@ -35,7 +40,7 @@ li{
 .header-links{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 55px;
 }
 
 .header-links li a {
@@ -111,11 +116,7 @@ h1{
 }
 
 .about-bg{
-  transition: 0.3seg ease;
-}
-
-.about-bg:hover{
-   color: #00C853;
+  color: #00C853;
 }
 
 /* end about */

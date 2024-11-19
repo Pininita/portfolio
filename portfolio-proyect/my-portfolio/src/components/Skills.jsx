@@ -12,8 +12,6 @@ export const Skills = (props) => {
     color: props.color
   }
 
-
-
   return (
     <div className='s-body'>
       <div className='s-container'>
