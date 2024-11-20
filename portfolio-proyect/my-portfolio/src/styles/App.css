@@ -68,11 +68,28 @@ li{
   image-rendering: auto;
 }
 
-.presentation-content{
+/* .presentation-content{
   display: flex;
   justify-content:space-around;
   padding: 10px;
   height: 50vh;
+} */
+
+.presentation-content {
+  display: grid;
+  grid-template-columns: 50rem 20rem; 
+  align-items: center; 
+  justify-items: center; 
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .presentation-content {
+      grid-template-columns: 1fr; 
+      /* grid-template-rows: 500px 400px; */
+      height: 100vh;
+  }
+  
 }
 
 .content{
@@ -81,6 +98,15 @@ li{
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 570px) {
+  .content {
+      display: flex;
+      flex-direction: column; /* Organiza los elementos en columna */
+      align-items: center; /* Opcional, para centrar los elementos horizontalmente */
+      justify-content: center; /* Opcional, para centrar los elementos verticalmente */
+  }
 }
 
 
@@ -93,9 +119,9 @@ h1{
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  position: absolute;
+  /* position: absolute;
   right: 16rem;
-  bottom: 20rem;
+  bottom: 20rem; */
 } 
 
 /* end presentation */
@@ -118,6 +144,15 @@ h1{
 .about-bg{
   color: #00C853;
 }
+
+@media (max-width: 768px) {
+  .about{
+    padding: 10px 50px;
+  }
+
+}
+  
+
 
 /* end about */
 
@@ -270,6 +305,10 @@ h1{
   gap: 20px;
   flex-wrap: wrap;
   margin: 0;
+  background-image: url(../assets/greenWave.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .social-media{
@@ -364,6 +403,12 @@ h1{
 .contact-form button:active::after {
   transition: 0s;
   transform: translate(0, 5%);
+}
+
+@media (max-width: 768px){
+  .contact{
+    padding-bottom: 1rem;
+  }
 }
 
 .email p {
