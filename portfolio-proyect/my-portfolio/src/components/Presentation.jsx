@@ -1,6 +1,7 @@
 import React from "react";
 import danielPhoto from '../assets/devdaniel-photo.jpeg';
 import Typewriter from 'typewriter-effect'
+import { DownloadButton } from "./DownloadButton";
 
 export function Presentation() {
 
@@ -28,6 +29,8 @@ export function Presentation() {
 
                         /></h1>
                     </div>
+                    {/* DOWNLOAD CV */}
+                    <DownloadButton/>
                     {/* perfil image */}
                     <div className='content-photo'>
                         <img src={danielPhoto} alt="personal-photo" />
