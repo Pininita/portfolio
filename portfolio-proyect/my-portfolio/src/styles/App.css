@@ -41,7 +41,7 @@ li {
 .header-links {
   display: flex;
   justify-content: center;
-  gap: 55px;
+  gap: 10%;
 }
 
 .header-links li a {
@@ -56,7 +56,6 @@ li {
 
 .header-links li a:hover {
   border-bottom: 2px solid #00C853;
-  /* Verde brillante para el hover */
   color: #00C853;
 }
 
@@ -156,6 +155,7 @@ h1 {
   height: 250px;
   width: 250px;
   border-radius: 50%;
+  box-shadow: 0 0 15px 5px #388E3C;
 }
 
 /* end presentation */
@@ -167,7 +167,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 20px 10rem;
-
 }
 
 .about p {
@@ -185,8 +184,6 @@ h1 {
   }
 
 }
-
-
 
 /* end about */
 
@@ -211,7 +208,6 @@ h1 {
 .s-container {
   position: relative;
 }
-
 
 .s-container .s-progress {
   position: relative;
@@ -300,7 +296,6 @@ h1 {
 
 .project-card {
   background-color: #333333;
-  ;
   color: #A8D5BA;
   margin: 1rem;
   padding: 1rem;
@@ -349,6 +344,12 @@ h1 {
 .social-media {
   display: flex;
   gap: 10px;
+}
+
+.logo {
+  filter: drop-shadow(
+    0 0 10px #00C853
+  );
 }
 
 .contact-form {
@@ -466,15 +467,21 @@ h1 {
 }
 
 .copy-button:hover {
-  box-shadow: 1px 2px 2px 1px;
+  box-shadow: 0 0 10px 2px #00C853;
   border-radius: 10px;
-  background-color: #575a58;
+  background-color: #2b9e52;
 }
 
 .copy-button img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.copied-message {
+  color: green;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 /* end contact */
@@ -485,11 +492,25 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  gap: 10%;
   background-color: #121212;
   color: #A8D5BA;
   position: relative;
   height: 150px;
   align-items: center;
 }
+
+.footer-arrow img {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #2b9e518e;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.footer-arrow img:hover {
+  box-shadow: 0px 0px 10px 2px #00C853;
+}
+
 
 /* end footer */

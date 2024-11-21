@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import copyPng from "../assets/copy.png"
 import linkedinPng from "../assets/linkedin-logo.png"
 import githubPng from "../assets/github-logo.png"
@@ -6,15 +6,18 @@ import { ContactForm } from './ContactForm'
 
 export const Contact = (props) => {
 
+    const [copied, setCopied] = useState(false)
+
     const handleClickButton = () => {
         navigator.clipboard.writeText(props.email)
             .then(() => {
-                alert('email copied')
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
             })
             .catch((err) => {
-                alert('Error copying text', err)
-            })
-    }
+                alert('Error copying text', err);
+            });
+    };
 
     return (
         <>
@@ -41,6 +44,8 @@ export const Contact = (props) => {
                             <button className='copy-button' onClick={handleClickButton}>
                                 <img src={copyPng} alt="copy-png" />
                             </button>
+                            {/* if true, will show thw message */}
+                            {copied && <span className="copied-message">Copied!</span>}
                         </p>
                     </div>
 

@@ -11,7 +11,7 @@ import { Skills } from './components/Skills';
 
 function App() {
   return (
-    <div className="App">
+    <div id='app' className="App">
 
       <Header />
 
@@ -110,7 +110,7 @@ function App() {
       </section>
 
       <Contact
-        location="Colombia, Armenia"
+        location="Colombia"
         phone="+57 312 689 88 66"
         email="devdanielsanabria@gmail.com"
       />
