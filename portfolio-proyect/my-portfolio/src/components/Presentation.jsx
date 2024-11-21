@@ -30,7 +30,10 @@ export function Presentation() {
                         /></h1>
                     </div>
                     {/* DOWNLOAD CV */}
-                    <DownloadButton/>
+                    <div className="button-cv">
+                        <DownloadButton/>
+                    </div>
+                    
                     {/* perfil image */}
                     <div className='content-photo'>
                         <img src={danielPhoto} alt="personal-photo" />
